@@ -6,8 +6,7 @@ Package simplebox provides a simple, easy-to-use cryptographic API where all of
 the hard decisions have been made for you in advance. The backing cryptography
 is XSalsa20 and Poly1305, which are known to be secure as well as fast.
 
-This idea is entirely based on the [SimpleBox implementation included with
-RbNaCl][rbnacl].
+This package is a Golang port of the [RbNaCl module of the same name][rbnacl].
 
 ## Installation and Usage
 
