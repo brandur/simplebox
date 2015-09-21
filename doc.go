@@ -10,8 +10,8 @@ ciphertex. When it's time for decryption, the message is split back into nonce
 and ciphertext, and the message is decrypted.
 
 Thanks to the size of the nonce, the chance of a collision is negligible. For
-example, after encrypting 2^64 messages, the odds of their having been repeated
-nonce is approximately 2^-64.
+example, after encrypting 2^64 messages, the odds of there having been a
+repeated nonce is approximately 2^-64.
 
 Note that although this strategy assures the confidentiality of your messages,
 it doesn't provide any protection against messages being reordered and replayed
