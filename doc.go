@@ -1,7 +1,7 @@
 /*
 Package simplebox provides a simple, easy-to-use cryptographic API where all of
 the hard decisions have been made for you in advance. The backing cryptography
-is XSalsa20 and Poly1305, which are known to be secure as well as fast.
+is XSalsa20 and Poly1305, which are known to be secure and fast.
 
 This package uses NaCl's secretbox under the hood, but also includes a simple
 yet secure nonce generation strategy. A 24-byte random nonce is generated from
