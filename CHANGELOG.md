@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.0] - 2024-05-15
+
 ### Changed
 
 - Project made into a Go module, moved to GitHub Actions and tested against latest Go (currently 1.22). [PR #2](https://github.com/brandur/simplebox/pull/2).
