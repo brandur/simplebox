@@ -51,7 +51,7 @@ func (b *SimpleBox) Decrypt(cipher []byte) ([]byte, error) {
 // Encrypts the given plaintext and returns ciphertext.
 func (b *SimpleBox) Encrypt(plain []byte) []byte {
 	var nonce [NonceSize]byte
-	rand.Reader.Read(nonce[:])
+	rand.Read(nonce[:])
 
 	var box []byte
 	box = secretbox.Seal(box[:0], plain, &nonce, b.secretKey)

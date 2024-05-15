@@ -12,7 +12,7 @@ var (
 
 func init() {
 	var secretKey [KeySize]byte
-	rand.Reader.Read(secretKey[:])
+	rand.Read(secretKey[:])
 	simpleBox = NewFromSecretKey(&secretKey)
 }
 
