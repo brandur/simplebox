@@ -1,0 +1,25 @@
+name: I
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  go_test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          check-latest: true
+          go-version: "stable"
+
+      - name: Run tests
+        run: go test ./...
